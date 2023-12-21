@@ -1,0 +1,42 @@
+.layout {
+	/* width: 1366px;
+	height: 768px; */
+	width: 100%;
+	height: 97vh;
+
+	margin: 0;
+	padding: 0;
+
+	display: grid;
+	grid:
+		'header header header' auto
+		'leftSide body rightSide' 1fr
+		'footer footer footer' auto / auto 1fr auto;
+	gap: 8px;
+	text-align: center;
+	font-size: 3rem;
+}
+
+.header {
+	grid-area: header;
+	background-color: aliceblue;
+}
+.leftSide {
+	grid-area: leftSide;
+	background-color: lightgreen;
+}
+main {
+	grid-area: body;
+	background-color: lightpink;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.rightSide {
+	grid-area: rightSide;
+	background-color: lightgreen;
+}
+.footer {
+	grid-area: footer;
+	background-color: lightskyblue;
+}
